@@ -1,0 +1,4 @@
+com.kiran.arithmatic
+id name
+layout activity_main
+string app_name
