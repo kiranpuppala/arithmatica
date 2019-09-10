@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Additionn</string>
+    <string name="app_name_free">Addition Free</string>
+    <string name="app_name_paid">Addition Paid</string>
 </resources>

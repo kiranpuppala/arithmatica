@@ -1,4 +1,5 @@
-apply plugin : 'com.android.application'
+apply plugin: 'com.android.application'
+
 
 android {
     compileSdkVersion 28
@@ -7,18 +8,63 @@ android {
         applicationId "com.kiran.addition"
         minSdkVersion 19
         targetSdkVersion 28
-        versionCode 1 
+        versionCode 1
         versionName "1.0"
     }
+
+    signingConfigs {
+        release {
+            storeFile file("keys/additionkey")
+            storePassword "password"
+            keyAlias "additionkeyalias"
+            keyPassword "password"
+        }
+
+    }
+
 
     buildTypes {
         release {
             minifyEnabled true
+            signingConfig signingConfigs.release
+        }
+    }
+
+    flavorDimensions "normal"
+
+    productFlavors {
+        free {
+            dimension "normal"
+
+            applicationIdSuffix ".free"
+
+            manifestPlaceholders = [appName: "@string/app_name_free"]
+        }
+
+        paid {
+            dimension "normal"
+
+            applicationIdSuffix ".paid"
+
+            manifestPlaceholders = [appName: "@string/app_name_paid"]
+
         }
     }
 }
 
-dependencies{
+dependencies {
     implementation project(':arithmatic')
-    implementation 'com.android.support:appcompat-v7:28.0.0'
+//    implementation 'com.google.firebase:firebase-analytics:17.0.1'
+//
+//    // Check for v11.4.2 or higher
+//    implementation 'com.google.firebase:firebase-core:17.2.0'
+//
+//    // (Recommended) Add Analytics
+//    implementation 'com.google.firebase:firebase-analytics:17.2.0'
+//
+//    // Add dependency
+//    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
 }
+
+//apply plugin: 'com.google.gms.google-services'
+
