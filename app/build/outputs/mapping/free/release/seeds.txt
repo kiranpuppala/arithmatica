@@ -1,0 +1,10 @@
+com.kiran.addition.MainActivity
+com.kiran.addition.MainActivity: MainActivity()
+com.kiran.addition.R$id: int name
+com.kiran.addition.R$layout: int activity_main
+com.kiran.addition.R$string: int app_name
+com.kiran.addition.R$string: int app_name_free
+com.kiran.addition.R$string: int app_name_paid
+com.kiran.arithmatic.R$id: int name
+com.kiran.arithmatic.R$layout: int activity_main
+com.kiran.arithmatic.R$string: int app_name

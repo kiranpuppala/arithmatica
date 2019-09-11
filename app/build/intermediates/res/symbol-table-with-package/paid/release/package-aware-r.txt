@@ -1,0 +1,6 @@
+com.kiran.addition.paid
+id name
+layout activity_main
+string app_name
+string app_name_free
+string app_name_paid

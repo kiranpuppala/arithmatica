@@ -1,0 +1,6 @@
+com.kiran.addition.MainActivity -> com.kiran.addition.MainActivity:
+    void <init>() -> <init>
+    void onCreate(android.os.Bundle) -> onCreate
+com.kiran.arithmatic.Addition -> com.kiran.a.a:
+    void <init>() -> <init>
+    int sum(int,int) -> a
