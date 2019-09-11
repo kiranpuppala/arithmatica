@@ -7,7 +7,6 @@
 arith
 
 arithmatic/build/*
-app/build/*
 *.iml
 .gradle
 /local.properties
