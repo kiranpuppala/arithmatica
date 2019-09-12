@@ -1,4 +1,0 @@
-#Wed Sep 11 07:45:13 IST 2019
-base.0=/Users/kiranpuppala/Projects/additionlibrary/app/build/intermediates/dex/freeDebug/mergeDexFreeDebug/out
-path.0=classes.dex
-renamed.0=classes.dex

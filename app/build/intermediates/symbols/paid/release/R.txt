@@ -1,5 +1,0 @@
-int id name 0x7f010000
-int layout activity_main 0x7f020000
-int string app_name 0x7f030000
-int string app_name_free 0x7f030001
-int string app_name_paid 0x7f030002

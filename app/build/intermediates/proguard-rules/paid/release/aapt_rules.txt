@@ -1,2 +1,0 @@
-# Referenced at /Users/kiranpuppala/Projects/additionlibrary/app/build/intermediates/merged_manifests/paidRelease/AndroidManifest.xml:18
--keep class com.kiran.addition.MainActivity { <init>(); }

@@ -10,6 +10,7 @@ android {
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
     signingConfigs {
@@ -53,6 +54,7 @@ android {
 }
 
 dependencies {
+    testImplementation 'junit:junit:4.12'
     implementation project(':arithmatic')
 //    implementation 'com.google.firebase:firebase-analytics:17.0.1'
 //
@@ -64,6 +66,22 @@ dependencies {
 //
 //    // Add dependency
 //    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+}
+
+task addDateToAppName(){
+    android.applicationVariants.all {
+        variant ->
+            variant.outputs.all { output ->
+                def dateAndTime = new Date().format("yyyy-MM-dd")
+
+                def fileName = variant.name + "_" + dateAndTime + ".apk"
+                output.outputFileName = fileName
+            }
+    }
+}
+
+gradle.taskGraph.whenReady {
+    addDateToAppName
 }
 
 //apply plugin: 'com.google.gms.google-services'
